@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <script src="tictac.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="font-family: Arial, Helvetica, sans-serif; text-align: center; padding-top: 3vh;">Jogo da velha</h1>
+    <section class="inputnames">
+        <label for="player1">
+            <h3 class="h3input">X: <input type="text" placeholder="Nome do Player 1" id="player1"></input>
+            </h3>
+        </label>
+
+        <label for="player2">
+            <h3 class="h3input">O: <input type="text" placeholder="Nome do Player 2" id="player2"></input>
+            </h3>
+        </label>
+    </section>
+    <div class="buttonstart">
+        <button id="Start" onclick="Start()">Start Game</button>
+    </div>
+    <h3 id=Turn>Turn: <span id="TurnPlayer"></span></h3>
+    <div class="containergame">
+        <section id="gameField">
+            <span id="1" value="1"></span>
+            <span id="2"></span>
+            <span id="3"></span>
+            <span id="4"></span>
+            <span id="5"></span>
+            <span id="6"></span>
+            <span id="7"></span>
+            <span id="8"></span>
+            <span id="9"></span>
+        </section>
+    </div>
+</body>
+
+</html>
