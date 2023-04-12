@@ -82,11 +82,13 @@ function handleBoardClick(ev) {
   const winRegions = getWinRegions()
   if (winRegions.length > 0) {
     handleWin(winRegions)
+    disableRegion(span)
   } else if (vBoard.flat().includes('')) {
     turnPlayer = turnPlayer === 'player1' ? 'player2' : 'player1'
     updateTitle()
   } else {
     document.querySelector('h2').innerHTML = 'Empate!'
+    disableRegion(span)
   }
 }
 // Adiciona o evento no botão que inicia o jogo
